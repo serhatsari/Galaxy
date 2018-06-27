@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>SpeechKit</string>
+		<key>picture</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>SiriKit</string>
+		<key>picture</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>ARKit</string>
+		<key>picture</key>
+		<string>3</string>
+	</dict>
+</array>
+</plist>

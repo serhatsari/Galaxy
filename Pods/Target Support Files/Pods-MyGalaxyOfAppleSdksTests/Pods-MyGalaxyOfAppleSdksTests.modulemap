@@ -1,0 +1,6 @@
+framework module Pods_MyGalaxyOfAppleSdksTests {
+  umbrella header "Pods-MyGalaxyOfAppleSdksTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

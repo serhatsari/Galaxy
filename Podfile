@@ -6,6 +6,7 @@ target 'MyGalaxyOfAppleSdks' do
   use_frameworks!
 
   # Pods for MyGalaxyOfAppleSdks
+  pod 'CollectionViewSlantedLayout', '~> 3.0'
 
   target 'MyGalaxyOfAppleSdksTests' do
     inherit! :search_paths
@@ -16,5 +17,6 @@ target 'MyGalaxyOfAppleSdks' do
     inherit! :search_paths
     # Pods for testing
   end
+  
 
 end

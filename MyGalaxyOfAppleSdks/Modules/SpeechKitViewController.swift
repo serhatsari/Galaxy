@@ -20,6 +20,10 @@ class SpeechKitViewController: UIViewController, SFSpeechRecognizerDelegate {
     private var recognitionTask: SFSpeechRecognitionTask?
     private let audioEngine = AVAudioEngine()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,6 +56,9 @@ class SpeechKitViewController: UIViewController, SFSpeechRecognizerDelegate {
                 self.microphoneButton.isEnabled = isButtonEnabled
             }
         }
+    }
+    @IBAction func closeAction(_ sender: AnyObject){
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func microphoneTapped(_ sender: AnyObject) {

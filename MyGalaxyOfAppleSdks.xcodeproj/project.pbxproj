@@ -19,6 +19,8 @@
 		581DB2E620E24FC20006FEE6 /* SiriKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581DB2E520E24FC20006FEE6 /* SiriKitViewController.swift */; };
 		581DB2E920E256560006FEE6 /* SpeechKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581DB2E820E256560006FEE6 /* SpeechKitViewController.swift */; };
 		581DB2EE20E371380006FEE6 /* String+Ranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581DB2ED20E371380006FEE6 /* String+Ranges.swift */; };
+		581DB2F020E385750006FEE6 /* covers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 581DB2EF20E385750006FEE6 /* covers.plist */; };
+		581DB2F320E386720006FEE6 /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581DB2F220E386720006FEE6 /* CustomCollectionCell.swift */; };
 		E194C91E414B6E63C570FA23 /* Pods_MyGalaxyOfAppleSdksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3986264CB825ECD22DD6EFF8 /* Pods_MyGalaxyOfAppleSdksTests.framework */; };
 		E2BD260CA908A693CC22388F /* Pods_MyGalaxyOfAppleSdksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6249715E9A8896B8DD5155FB /* Pods_MyGalaxyOfAppleSdksUITests.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +63,8 @@
 		581DB2E520E24FC20006FEE6 /* SiriKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriKitViewController.swift; sourceTree = "<group>"; };
 		581DB2E820E256560006FEE6 /* SpeechKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechKitViewController.swift; sourceTree = "<group>"; };
 		581DB2ED20E371380006FEE6 /* String+Ranges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ranges.swift"; sourceTree = "<group>"; };
+		581DB2EF20E385750006FEE6 /* covers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = covers.plist; sourceTree = "<group>"; };
+		581DB2F220E386720006FEE6 /* CustomCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
 		6249715E9A8896B8DD5155FB /* Pods_MyGalaxyOfAppleSdksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyGalaxyOfAppleSdksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D26CB80CC88AB0A2DA6F199 /* Pods-MyGalaxyOfAppleSdksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyGalaxyOfAppleSdksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyGalaxyOfAppleSdksTests/Pods-MyGalaxyOfAppleSdksTests.release.xcconfig"; sourceTree = "<group>"; };
 		7193ECC3364EAF7B717FC051 /* Pods-MyGalaxyOfAppleSdks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyGalaxyOfAppleSdks.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyGalaxyOfAppleSdks/Pods-MyGalaxyOfAppleSdks.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 		581DB2B320E22EB60006FEE6 /* MyGalaxyOfAppleSdks */ = {
 			isa = PBXGroup;
 			children = (
+				581DB2F120E386680006FEE6 /* Views */,
 				581DB2EA20E276A50006FEE6 /* Helpers */,
 				581DB2E720E24FCB0006FEE6 /* Modules */,
 				581DB2B420E22EB60006FEE6 /* AppDelegate.swift */,
@@ -130,6 +135,7 @@
 				581DB2BE20E22EB80006FEE6 /* Assets.xcassets */,
 				581DB2C020E22EB80006FEE6 /* LaunchScreen.storyboard */,
 				581DB2C320E22EB80006FEE6 /* Info.plist */,
+				581DB2EF20E385750006FEE6 /* covers.plist */,
 				581DB2BB20E22EB60006FEE6 /* MyGalaxyOfAppleSdks.xcdatamodeld */,
 			);
 			path = MyGalaxyOfAppleSdks;
@@ -168,6 +174,14 @@
 				581DB2ED20E371380006FEE6 /* String+Ranges.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		581DB2F120E386680006FEE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				581DB2F220E386720006FEE6 /* CustomCollectionCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		72E5568745170979A67DDD77 /* Frameworks */ = {
@@ -306,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581DB2F020E385750006FEE6 /* covers.plist in Resources */,
 				581DB2C220E22EB80006FEE6 /* LaunchScreen.storyboard in Resources */,
 				581DB2BF20E22EB80006FEE6 /* Assets.xcassets in Resources */,
 				581DB2BA20E22EB60006FEE6 /* Main.storyboard in Resources */,
@@ -335,9 +350,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyGalaxyOfAppleSdks/Pods-MyGalaxyOfAppleSdks-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CollectionViewSlantedLayout/CollectionViewSlantedLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionViewSlantedLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -486,6 +504,7 @@
 				581DB2B520E22EB60006FEE6 /* AppDelegate.swift in Sources */,
 				581DB2EE20E371380006FEE6 /* String+Ranges.swift in Sources */,
 				581DB2BD20E22EB60006FEE6 /* MyGalaxyOfAppleSdks.xcdatamodeld in Sources */,
+				581DB2F320E386720006FEE6 /* CustomCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
