@@ -16,6 +16,9 @@
 		581DB2C220E22EB80006FEE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581DB2C020E22EB80006FEE6 /* LaunchScreen.storyboard */; };
 		581DB2CD20E22EB80006FEE6 /* MyGalaxyOfAppleSdksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581DB2CC20E22EB80006FEE6 /* MyGalaxyOfAppleSdksTests.swift */; };
 		581DB2D820E22EB80006FEE6 /* MyGalaxyOfAppleSdksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581DB2D720E22EB80006FEE6 /* MyGalaxyOfAppleSdksUITests.swift */; };
+		581DB2E620E24FC20006FEE6 /* SiriKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581DB2E520E24FC20006FEE6 /* SiriKitViewController.swift */; };
+		581DB2E920E256560006FEE6 /* SpeechKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581DB2E820E256560006FEE6 /* SpeechKitViewController.swift */; };
+		581DB2EE20E371380006FEE6 /* String+Ranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581DB2ED20E371380006FEE6 /* String+Ranges.swift */; };
 		E194C91E414B6E63C570FA23 /* Pods_MyGalaxyOfAppleSdksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3986264CB825ECD22DD6EFF8 /* Pods_MyGalaxyOfAppleSdksTests.framework */; };
 		E2BD260CA908A693CC22388F /* Pods_MyGalaxyOfAppleSdksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6249715E9A8896B8DD5155FB /* Pods_MyGalaxyOfAppleSdksUITests.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +58,9 @@
 		581DB2D320E22EB80006FEE6 /* MyGalaxyOfAppleSdksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGalaxyOfAppleSdksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		581DB2D720E22EB80006FEE6 /* MyGalaxyOfAppleSdksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGalaxyOfAppleSdksUITests.swift; sourceTree = "<group>"; };
 		581DB2D920E22EB80006FEE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		581DB2E520E24FC20006FEE6 /* SiriKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriKitViewController.swift; sourceTree = "<group>"; };
+		581DB2E820E256560006FEE6 /* SpeechKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechKitViewController.swift; sourceTree = "<group>"; };
+		581DB2ED20E371380006FEE6 /* String+Ranges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ranges.swift"; sourceTree = "<group>"; };
 		6249715E9A8896B8DD5155FB /* Pods_MyGalaxyOfAppleSdksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyGalaxyOfAppleSdksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D26CB80CC88AB0A2DA6F199 /* Pods-MyGalaxyOfAppleSdksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyGalaxyOfAppleSdksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyGalaxyOfAppleSdksTests/Pods-MyGalaxyOfAppleSdksTests.release.xcconfig"; sourceTree = "<group>"; };
 		7193ECC3364EAF7B717FC051 /* Pods-MyGalaxyOfAppleSdks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyGalaxyOfAppleSdks.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyGalaxyOfAppleSdks/Pods-MyGalaxyOfAppleSdks.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +122,8 @@
 		581DB2B320E22EB60006FEE6 /* MyGalaxyOfAppleSdks */ = {
 			isa = PBXGroup;
 			children = (
+				581DB2EA20E276A50006FEE6 /* Helpers */,
+				581DB2E720E24FCB0006FEE6 /* Modules */,
 				581DB2B420E22EB60006FEE6 /* AppDelegate.swift */,
 				581DB2B620E22EB60006FEE6 /* ViewController.swift */,
 				581DB2B820E22EB60006FEE6 /* Main.storyboard */,
@@ -143,6 +151,23 @@
 				581DB2D920E22EB80006FEE6 /* Info.plist */,
 			);
 			path = MyGalaxyOfAppleSdksUITests;
+			sourceTree = "<group>";
+		};
+		581DB2E720E24FCB0006FEE6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				581DB2E520E24FC20006FEE6 /* SiriKitViewController.swift */,
+				581DB2E820E256560006FEE6 /* SpeechKitViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		581DB2EA20E276A50006FEE6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				581DB2ED20E371380006FEE6 /* String+Ranges.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		72E5568745170979A67DDD77 /* Frameworks */ = {
@@ -455,8 +480,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581DB2E620E24FC20006FEE6 /* SiriKitViewController.swift in Sources */,
 				581DB2B720E22EB60006FEE6 /* ViewController.swift in Sources */,
+				581DB2E920E256560006FEE6 /* SpeechKitViewController.swift in Sources */,
 				581DB2B520E22EB60006FEE6 /* AppDelegate.swift in Sources */,
+				581DB2EE20E371380006FEE6 /* String+Ranges.swift in Sources */,
 				581DB2BD20E22EB60006FEE6 /* MyGalaxyOfAppleSdks.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,7 +662,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72W3K954J4;
 				INFOPLIST_FILE = MyGalaxyOfAppleSdks/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serabisa.MyGalaxyOfAppleSdks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -650,7 +681,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72W3K954J4;
 				INFOPLIST_FILE = MyGalaxyOfAppleSdks/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serabisa.MyGalaxyOfAppleSdks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -667,7 +701,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72W3K954J4;
 				INFOPLIST_FILE = MyGalaxyOfAppleSdksTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serabisa.MyGalaxyOfAppleSdksTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -685,7 +723,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72W3K954J4;
 				INFOPLIST_FILE = MyGalaxyOfAppleSdksTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serabisa.MyGalaxyOfAppleSdksTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -702,7 +744,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72W3K954J4;
 				INFOPLIST_FILE = MyGalaxyOfAppleSdksUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serabisa.MyGalaxyOfAppleSdksUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -719,7 +765,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72W3K954J4;
 				INFOPLIST_FILE = MyGalaxyOfAppleSdksUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serabisa.MyGalaxyOfAppleSdksUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
