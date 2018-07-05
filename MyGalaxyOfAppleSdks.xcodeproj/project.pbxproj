@@ -21,6 +21,11 @@
 		581DB2EE20E371380006FEE6 /* String+Ranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581DB2ED20E371380006FEE6 /* String+Ranges.swift */; };
 		581DB2F020E385750006FEE6 /* covers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 581DB2EF20E385750006FEE6 /* covers.plist */; };
 		581DB2F320E386720006FEE6 /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581DB2F220E386720006FEE6 /* CustomCollectionCell.swift */; };
+		581DB2F520E3C8F60006FEE6 /* ARKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581DB2F420E3C8F60006FEE6 /* ARKitViewController.swift */; };
+		58B8392D20EE447B00DC9598 /* CoreDatePeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8392C20EE447B00DC9598 /* CoreDatePeopleViewController.swift */; };
+		58B8393220EE44AF00DC9598 /* PeopleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8393120EE44AF00DC9598 /* PeopleManager.swift */; };
+		58B8393920EE476F00DC9598 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8393720EE476F00DC9598 /* Person+CoreDataClass.swift */; };
+		58B8393A20EE476F00DC9598 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8393820EE476F00DC9598 /* Person+CoreDataProperties.swift */; };
 		E194C91E414B6E63C570FA23 /* Pods_MyGalaxyOfAppleSdksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3986264CB825ECD22DD6EFF8 /* Pods_MyGalaxyOfAppleSdksTests.framework */; };
 		E2BD260CA908A693CC22388F /* Pods_MyGalaxyOfAppleSdksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6249715E9A8896B8DD5155FB /* Pods_MyGalaxyOfAppleSdksUITests.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +70,11 @@
 		581DB2ED20E371380006FEE6 /* String+Ranges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ranges.swift"; sourceTree = "<group>"; };
 		581DB2EF20E385750006FEE6 /* covers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = covers.plist; sourceTree = "<group>"; };
 		581DB2F220E386720006FEE6 /* CustomCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
+		581DB2F420E3C8F60006FEE6 /* ARKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitViewController.swift; sourceTree = "<group>"; };
+		58B8392C20EE447B00DC9598 /* CoreDatePeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDatePeopleViewController.swift; sourceTree = "<group>"; };
+		58B8393120EE44AF00DC9598 /* PeopleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleManager.swift; sourceTree = "<group>"; };
+		58B8393720EE476F00DC9598 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		58B8393820EE476F00DC9598 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6249715E9A8896B8DD5155FB /* Pods_MyGalaxyOfAppleSdksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyGalaxyOfAppleSdksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D26CB80CC88AB0A2DA6F199 /* Pods-MyGalaxyOfAppleSdksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyGalaxyOfAppleSdksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyGalaxyOfAppleSdksTests/Pods-MyGalaxyOfAppleSdksTests.release.xcconfig"; sourceTree = "<group>"; };
 		7193ECC3364EAF7B717FC051 /* Pods-MyGalaxyOfAppleSdks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyGalaxyOfAppleSdks.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyGalaxyOfAppleSdks/Pods-MyGalaxyOfAppleSdks.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +136,7 @@
 		581DB2B320E22EB60006FEE6 /* MyGalaxyOfAppleSdks */ = {
 			isa = PBXGroup;
 			children = (
+				58B8392E20EE448400DC9598 /* Models */,
 				581DB2F120E386680006FEE6 /* Views */,
 				581DB2EA20E276A50006FEE6 /* Helpers */,
 				581DB2E720E24FCB0006FEE6 /* Modules */,
@@ -164,6 +175,8 @@
 			children = (
 				581DB2E520E24FC20006FEE6 /* SiriKitViewController.swift */,
 				581DB2E820E256560006FEE6 /* SpeechKitViewController.swift */,
+				581DB2F420E3C8F60006FEE6 /* ARKitViewController.swift */,
+				58B8392C20EE447B00DC9598 /* CoreDatePeopleViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -182,6 +195,16 @@
 				581DB2F220E386720006FEE6 /* CustomCollectionCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		58B8392E20EE448400DC9598 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58B8393720EE476F00DC9598 /* Person+CoreDataClass.swift */,
+				58B8393820EE476F00DC9598 /* Person+CoreDataProperties.swift */,
+				58B8393120EE44AF00DC9598 /* PeopleManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		72E5568745170979A67DDD77 /* Frameworks */ = {
@@ -499,11 +522,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				581DB2E620E24FC20006FEE6 /* SiriKitViewController.swift in Sources */,
+				58B8393920EE476F00DC9598 /* Person+CoreDataClass.swift in Sources */,
+				58B8393220EE44AF00DC9598 /* PeopleManager.swift in Sources */,
 				581DB2B720E22EB60006FEE6 /* ViewController.swift in Sources */,
 				581DB2E920E256560006FEE6 /* SpeechKitViewController.swift in Sources */,
 				581DB2B520E22EB60006FEE6 /* AppDelegate.swift in Sources */,
+				58B8392D20EE447B00DC9598 /* CoreDatePeopleViewController.swift in Sources */,
 				581DB2EE20E371380006FEE6 /* String+Ranges.swift in Sources */,
+				58B8393A20EE476F00DC9598 /* Person+CoreDataProperties.swift in Sources */,
 				581DB2BD20E22EB60006FEE6 /* MyGalaxyOfAppleSdks.xcdatamodeld in Sources */,
+				581DB2F520E3C8F60006FEE6 /* ARKitViewController.swift in Sources */,
 				581DB2F320E386720006FEE6 /* CustomCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

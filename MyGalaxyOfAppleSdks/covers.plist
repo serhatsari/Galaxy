@@ -10,6 +10,12 @@
 	</dict>
 	<dict>
 		<key>title</key>
+		<string>CoreData</string>
+		<key>picture</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>SiriKit</string>
 		<key>picture</key>
 		<string>2</string>

@@ -53,6 +53,12 @@ class ViewController: UIViewController {
         let controller = storyboard.instantiateViewController(withIdentifier: "SpeechKitViewController")
         self.present(controller, animated: true, completion: nil)
     }
+    
+    @objc func coreDataPeopleAction(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "CoreDatePeopleViewController")
+        self.navigationController?.show(controller, sender: self)
+    }
 
 }
 
@@ -84,6 +90,8 @@ extension ViewController: CollectionViewDelegateSlantedLayout {
         switch indexPath.row {
         case 0:
             self.speechKitAction()
+        case 1:
+            self.coreDataPeopleAction()
         default:
             let coverItem = covers[indexPath.row]
             let title = coverItem["title"]
